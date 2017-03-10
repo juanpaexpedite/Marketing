@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-monoandroid10+monotouch10+net45+win+win81+wp8+wpa81+xamarinios10</PackageTargetFallback>
+    <PackageTargetFallback>$(PackageTargetFallback);uap10.0</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+    <PackageReference Include="Prism.Core" Version="6.2.0" />
+    <PackageReference Include="Prism.Windows" Version="6.0.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
