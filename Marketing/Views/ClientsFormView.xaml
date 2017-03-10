@@ -14,7 +14,7 @@
             <TextBox Header="Name" x:Name="ClientName" Text="{Binding Client.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Text="{Binding Client.Errors[Name][0]}" Foreground="Red" HorizontalAlignment="Right" />
 
-            <TextBox Header="Details" x:Name="ClientDetails" Text="{Binding Client.Description, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Header="Details" x:Name="ClientDetails" Text="{Binding Client.Details, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
 
             <Button Command="{x:Bind ViewModel.Create}" Content="Create" HorizontalAlignment="Right" Margin="0,12,0,0"/>
         </StackPanel>
