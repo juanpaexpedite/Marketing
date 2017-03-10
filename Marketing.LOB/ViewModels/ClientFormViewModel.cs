@@ -49,7 +49,12 @@ namespace Marketing.LOB.ViewModels
                 return false;
             }
 
-            return Client.Errors.Errors.Count == 0;
+            //This do not validate only checks
+            //return Client.Errors.Errors.Count == 0;
+            //This validates and updates UI
+            //return Client.ValidateProperties();
+            //This check if it is valid;
+            return Client.IsValid();
         }
         #endregion
 
